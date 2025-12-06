@@ -108,6 +108,8 @@ The X-Pad is engineered on a robust dual-MCU architecture, utilizing the $\text{
 
 #### Keys, Buttons and D-Pad
 
+<div align="center">
+
 | prefix | name         | footprint           | hex id | net | pin    | function     |
 | :----- | :----------- | :------------------ | :----- | :-- | :----- | :----------- |
 | KEY1   | MASTER       | PAD                 | ---    | ST  | GPIO38 | Menu Buttons |
@@ -127,7 +129,11 @@ The X-Pad is engineered on a robust dual-MCU architecture, utilizing the $\text{
 | KEY15  | LEFT BACK    | PAD                 | ---    | LT  | GPIO5  | Back Buttons |
 | KEY16  | RIGHT BACK   | PAD                 | ---    | RT  | GPIO6  | Back Buttons |
 
+</div>
+
 #### Left Joystick, Vobration Motor
+
+<div align="center">
 
 | prefix | name                | footprint                        | hex id | net   | pin | function             |
 | :----- | :------------------ | :------------------------------- | :----- | :---- | :-- | :------------------- |
@@ -136,7 +142,11 @@ The X-Pad is engineered on a robust dual-MCU architecture, utilizing the $\text{
 | JS1    | Left Joystick (KEY) | JOYSTICK-TH_252BXXXXXXXB         | ---    | ST1   | PA1 | Left Stick Button    |
 | M1     | LCM0827A3038F       | VIBRATION-MOTOR-TH_LCM0827A3038F | ---    | LM    | PA3 | Left Vibration Motor |
 
+</div>
+
 #### Right Joystick, Vobration Motor
+
+<div align="center">
 
 | prefix | name                 | footprint                        | hex id | net   | pin | function              |
 | :----- | :------------------- | :------------------------------- | :----- | :---- | :-- | :-------------------- |
@@ -145,7 +155,11 @@ The X-Pad is engineered on a robust dual-MCU architecture, utilizing the $\text{
 | JS2    | Right Joystick (KEY) | JOYSTICK-TH_252BXXXXXXXB         | ---    | ST2   | PB2 | Right Stick Button    |
 | M2     | LCM0827A3038F        | VIBRATION-MOTOR-TH_LCM0827A3038F | ---    | RM    | PB1 | Right Vibration Motor |
 
+</div>
+
 #### Gyro
+
+<div align="center">
 
 | prefix | name           | footprint                       | hex id | net  | pin   | function             |
 | :----- | :------------- | :------------------------------ | :----- | :--- | :---- | :------------------- |
@@ -154,7 +168,11 @@ The X-Pad is engineered on a robust dual-MCU architecture, utilizing the $\text{
 | U2     | MPU6050 (SDA)  | QFN-24_L4.0-W4.0-P0.50-BL-EP2.7 | ---    | SDA  | GPIO8 | General I2C rail     |
 | U2     | MPU6050 (INT)  | QFN-24_L4.0-W4.0-P0.50-BL-EP2.7 | ---    | INTG | GPIO1 | MPU6050 Int Line     |
 
+</div>
+
 #### RGBs
+
+<div align="center">
 
 | prefix | name          | footprint                             | hex id | net  | pin    | function               |
 | :----- | :------------ | :------------------------------------ | :----- | :--- | :----- | :--------------------- |
@@ -164,6 +182,7 @@ The X-Pad is engineered on a robust dual-MCU architecture, utilizing the $\text{
 | RGB4   | SK6812MINI-HS | LED-SMD_4P-L3.5-W3.5-BR_SK6812MINI-HS | ---    | FC   | GPIO14 | Face Buttons Asthetics |
 | RGB5   | SK6812MINI-HS | LED-SMD_4P-L3.5-W3.5-BR_SK6812MINI-HS | ---    | DP   | GPIO46 | D-Pad Asthetics        |
 
+</div>
 </details>
 
 ## Acknowledgments
