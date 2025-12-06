@@ -180,6 +180,8 @@ The X-Pad is engineered on a robust dual-MCU architecture, utilizing the $\text{
 | U5     | Ra-02 SX1278 (MOSI)  | WIRELM-SMD_RA-02-BL | ---    | MOSI | GPIO11 | SPI rail MISO pin                |
 | U5     | Ra-02 SX1278 (SCK)   | WIRELM-SMD_RA-02-BL | ---    | SCK  | GPIO12 | SPI rail SCK pin                 |
 | U5     | Ra-02 SX1278 (SS/CS) | WIRELM-SMD_RA-02-BL | ---    | CS   | GPIO10 | Slave Select pin for LoRa module |
+| U5     | Ra-02 SX1278 (RST)   | WIRELM-SMD_RA-02-BL | ---    | LRST | GPIO15 | Reset pin for LoRa module        |
+| U5     | Ra-02 SX1278 (DIO0)  | WIRELM-SMD_RA-02-BL | ---    | LR0  | GPIO15 | DIO0 pin for LoRa module         |
 
 </div>
 
@@ -194,6 +196,41 @@ The X-Pad is engineered on a robust dual-MCU architecture, utilizing the $\text{
 | RGB3   | SK6812MINI-HS | LED-SMD_4P-L3.5-W3.5-BR_SK6812MINI-HS | ---    | RGB2 | PB0    | Right Stick Asthetics  |
 | RGB4   | SK6812MINI-HS | LED-SMD_4P-L3.5-W3.5-BR_SK6812MINI-HS | ---    | FC   | GPIO14 | Face Buttons Asthetics |
 | RGB5   | SK6812MINI-HS | LED-SMD_4P-L3.5-W3.5-BR_SK6812MINI-HS | ---    | DP   | GPIO46 | D-Pad Asthetics        |
+
+</div>
+
+#### Some native sensors and drivers
+
+<div align="center">
+
+| prefix | name              | footprint                      | hex id | net  | pin    | function             |
+| :----- | :---------------- | :----------------------------- | :----- | :--- | :----- | :------------------- |
+| ---    | ---               | ---                            | ---    | BATC | GPIO7  | Battery Voltage Data |
+| USB1   | USB16P SMT 301 5A | USB-TYPE-C-SMD_TYPEC-DB-116PWB | ---    | D+   | GPIO20 | USB Type-C D+ Pin    |
+| USB1   | USB16P SMT 301 5A | USB-TYPE-C-SMD_TYPEC-DB-116PWB | ---    | D-   | GPIO19 | USB Type-C D- Pin    |
+
+</div>
+
+#### AtTiny84-MU I2C Pins
+
+<div align="center">
+
+| prefix | name                         | footprint                    | hex id | net | pin | function              |
+| :----- | :--------------------------- | :--------------------------- | :----- | :-- | :-- | :-------------------- |
+| MCU1   | SK6812MINI-ESP32-S3-WROOM-1U | WIRELM-SMD_ESP32-S3-WROOM-1U | ---    | SCL | PA4 | MASTER I2C rail (SCL) |
+| MCU1   | SK6812MINI-ESP32-S3-WROOM-1U | WIRELM-SMD_ESP32-S3-WROOM-1U | ---    | SDA | PA6 | MASTER I2C rail (SDA) |
+
+</div>
+
+#### Slave Addresses
+
+<div align="center">
+
+| prefix | name        | address | condition |
+| :----- | :---------- | :------ | :-------- |
+| MCU2   | AtTiny84-MU | 0x42    | ---       |
+| U2     | MPU6050     | 0x68    | AD0 low   |
+| U2     | MPU6050     | 0x69    | AD0 high  |
 
 </div>
 </details>
