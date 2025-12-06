@@ -170,6 +170,19 @@ The X-Pad is engineered on a robust dual-MCU architecture, utilizing the $\text{
 
 </div>
 
+#### LoRa
+
+<div align="center">
+
+| prefix | name                 | footprint           | hex id | net  | pin    | function                         |
+| :----- | :------------------- | :------------------ | :----- | :--- | :----- | :------------------------------- |
+| U5     | Ra-02 SX1278 (MISO)  | WIRELM-SMD_RA-02-BL | ---    | MISO | GPIO13 | SPI rail MOSI pin                |
+| U5     | Ra-02 SX1278 (MOSI)  | WIRELM-SMD_RA-02-BL | ---    | MOSI | GPIO11 | SPI rail MISO pin                |
+| U5     | Ra-02 SX1278 (SCK)   | WIRELM-SMD_RA-02-BL | ---    | SCK  | GPIO12 | SPI rail SCK pin                 |
+| U5     | Ra-02 SX1278 (SS/CS) | WIRELM-SMD_RA-02-BL | ---    | CS   | GPIO10 | Slave Select pin for LoRa module |
+
+</div>
+
 #### RGBs
 
 <div align="center">
